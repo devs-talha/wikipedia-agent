@@ -61,6 +61,7 @@ The agent is built using the following key components:
    LANGSMITH_PROJECT=wikipedia-agent
    REDIS_URI=redis://localhost:6379
    DATABASE_URI=postgresql://user:password@localhost:5432/wikipedia_agent
+   API_KEY="your_api_key_for_authentication"
    ```
 
 ### Docker Deployment
@@ -126,6 +127,7 @@ wikipedia-agent/
 | `LANGSMITH_PROJECT` | LangSmith project name | Yes |
 | `REDIS_URI` | Redis connection string for caching and sessions | Yes |
 | `DATABASE_URI` | PostgreSQL connection string for persistent storage | Yes |
+| `API_KEY` | Authentication key for API access | Yes |
 | `LANGSMITH_TRACING` | Enable/disable LangSmith tracing | No |
 | `LANGSMITH_ENDPOINT` | LangSmith API endpoint | No |
 
@@ -186,6 +188,7 @@ docker run -p 8000:8000 \
   -e LANGSMITH_API_KEY=your_langsmith_key \
   -e REDIS_URI=redis://your-redis-host:6379 \
   -e DATABASE_URI=postgresql://user:pass@your-db-host:5432/dbname \
+  -e API_KEY="your_api_key_for_authentication" \
   wikipedia-agent
 ```
 
