@@ -19,6 +19,8 @@ RUN set -ex && \
 
 # -- Installing all local dependencies --
 RUN PYTHONDONTWRITEBYTECODE=1 uv pip install --system --no-cache-dir -c /api/constraints.txt -e /deps/*
+COPY requirements.txt /
+RUN uv pip install --system --no-cache-dir -r /requirements.txt
 # -- End of local dependencies install --
 ENV LANGSERVE_GRAPHS='{"agent": "/deps/__outer_graph/src/graph.py:graph"}'
 
@@ -35,3 +37,5 @@ RUN rm -rf /usr/lib/python*/site-packages/pip* /usr/lib/python*/site-packages/se
 RUN uv pip uninstall --system pip setuptools wheel && rm /usr/bin/uv /usr/bin/uvx
 
 WORKDIR /deps/__outer_graph/src
+
+
