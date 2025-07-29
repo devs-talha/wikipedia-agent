@@ -8,6 +8,7 @@ appnope==0.1.4
 asttokens==3.0.0
 attrs==25.3.0
 beautifulsoup4==4.13.4
+black==25.1.0
 blockbuster==1.5.25
 certifi==2025.7.14
 cffi==1.17.1
@@ -24,6 +25,7 @@ distlib==0.4.0
 distro==1.9.0
 executing==2.2.0
 filelock==3.18.0
+flake8==7.3.0
 forbiddenfruit==0.1.4
 frozenlist==1.7.0
 greenlet==3.2.3
@@ -37,6 +39,7 @@ importlib_metadata==8.7.0
 ipykernel==6.30.0
 ipython==9.4.0
 ipython_pygments_lexers==1.1.1
+isort==6.0.1
 jedi==0.19.2
 jiter==0.10.0
 jsonpatch==1.33
@@ -62,6 +65,7 @@ langgraph-swarm==0.0.13
 langsmith==0.4.8
 marshmallow==3.26.1
 matplotlib-inline==0.1.7
+mccabe==0.7.0
 multidict==6.6.3
 mypy_extensions==1.1.0
 nest-asyncio==1.6.0
@@ -72,6 +76,7 @@ orjson==3.11.1
 ormsgpack==1.10.0
 packaging==25.0
 parso==0.8.4
+pathspec==0.12.1
 pexpect==4.9.0
 platformdirs==4.3.8
 pre_commit==4.2.0
@@ -83,11 +88,13 @@ psycopg-binary==3.2.9
 psycopg-pool==3.2.6
 ptyprocess==0.7.0
 pure_eval==0.2.3
+pycodestyle==2.14.0
 pycparser==2.22
 pydantic==2.11.7
 pydantic-settings==2.10.1
 pydantic_core==2.33.2
 pyee==13.0.0
+pyflakes==3.4.0
 Pygments==2.19.2
 PyJWT==2.10.1
 python-dateutil==2.9.0.post0
